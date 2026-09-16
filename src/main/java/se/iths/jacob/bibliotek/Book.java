@@ -4,28 +4,29 @@ public class Book {
 
     private String title;
     private String isbn;
-    private String author;
+    private Author author;
 
-    public Book(String title, String isbn, String author) {
+    public Book(String title, String isbn, Author author) {
         this.title = title;
         this.isbn = isbn;
         this.author = author;
     }
 
     public String getTitle() {
-        return title;
+        return "Boktitel: " + title;
     }
 
     public String getIsbn() {
-        return isbn;
+        return "ISBN: " + isbn;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
+       System.out.print("Författare: ");
         return author;
     }
 
-    public String toString(){
-        return title + isbn + author;
+    public String toString() {
+        return "Titel: " + title + " ISBN: " + isbn + " Författare: " + author;
     }
 
 }
